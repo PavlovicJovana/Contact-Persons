@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC
+        "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+        "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+
+<tiles-definitions>
+	<definition name="base-definition" template="/WEB-INF/views/tiles/layout/defaultLayout.jsp">
+		<put-attribute name="title" value=""></put-attribute>
+		<put-attribute name="menu" value="/WEB-INF/views/tiles/template/defaultMenu.jsp"></put-attribute>
+		<put-attribute name="body" value=""></put-attribute>
+	</definition>
+	
+	<!-- CONTACT PERSON -->
+	<definition name="contactPerson/contactPerson-add" extends="base-definition">
+		<put-attribute name="title" value="ContactPerson-add"></put-attribute>
+		<put-attribute name="body" value="/WEB-INF/views/contactPerson/contactPerson-add.jsp"></put-attribute>
+	</definition>
+	
+	<definition name="contactPerson/contactPerson-confirm" extends="base-definition">
+		<put-attribute name="title" value="ContactPerson-confirm"></put-attribute>
+		<put-attribute name="body" value="/WEB-INF/views/contactPerson/contactPerson-confirm.jsp"></put-attribute>
+	</definition>
+	
+	<definition name="contactPerson/contactPerson-list" extends="base-definition">
+		<put-attribute name="title" value="ContactPerson-list"></put-attribute>
+		<put-attribute name="body" value="/WEB-INF/views/contactPerson/contactPerson-list.jsp"></put-attribute>
+	</definition>
+	
+	<definition name="contactPerson/contactPerson-details" extends="base-definition">
+		<put-attribute name="title" value="ContactPerson-details"></put-attribute>
+		<put-attribute name="body" value="/WEB-INF/views/contactPerson/contactPerson-details.jsp"></put-attribute>
+	</definition>
+	
+	<definition name="contactPerson/contactPerson-edit" extends="base-definition">
+		<put-attribute name="title" value="ContactPerson-edit"></put-attribute>
+		<put-attribute name="body" value="/WEB-INF/views/contactPerson/contactPerson-edit.jsp"></put-attribute>
+	</definition>
+</tiles-definitions>
